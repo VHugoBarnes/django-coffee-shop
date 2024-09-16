@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="p-4 flex flex-col gap-y-4 container">
+  <h1 class="text-3xl font-bold text-gray-800">
+    Product list
+  </h1>
+  
+  <div>
+    <ul>
+      {% for product in products %}
+        <li>{{product.name}} - {{product.price}}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock content %}

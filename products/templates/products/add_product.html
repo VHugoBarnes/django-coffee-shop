@@ -1,4 +1,4 @@
-<form action="{% url 'products:add' %}" method="POST">
+<form action="{% url 'products_add' %}" method="POST">
   {% csrf_token %}
 
   {{form.as_p}}
