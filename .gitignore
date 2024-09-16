@@ -1,0 +1,45 @@
+# Django migration files
+**/migrations/
+
+# Django static files
+static/
+
+# Django media files
+media/
+
+# Virtual environment
+venv/
+.env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Log files
+*.log
+
+# Database files
+*.db
+*.sqlite3
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Compiled JavaScript files
+*.js.map
+
+# Compiled CSS files
+*.css.map
+
+# Miscellaneous
+*.swp
+.DS_Store
