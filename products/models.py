@@ -8,3 +8,6 @@ class Product(models.Model):
     description = models.TextField()
     available = models.BooleanField(default=True)
     photo = models.ImageField(upload_to="products/photos", null=True, blank=True)
+
+    def __str__(self):
+        return self.name
