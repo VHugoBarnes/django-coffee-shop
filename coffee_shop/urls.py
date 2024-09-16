@@ -22,8 +22,10 @@ from django.conf import settings
 
 # Import urls from products app
 from products import urls as products_urls
+from users import urls as users_urls
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("products/", include(products_urls)),
+    path("users/", include(users_urls)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
