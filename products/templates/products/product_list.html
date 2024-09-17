@@ -5,6 +5,21 @@
   <h1 class="text-3xl font-bold text-gray-800">
     Product list
   </h1>
+
+  <p>
+    {% if user.is_authenticated %}
+      <p>
+        {{user.username}}
+      </p>
+
+      <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+      </form>
+    {% else %}
+      Not logged in
+    {% endif %}
+  </p>
   
   <div>
     <ul>
